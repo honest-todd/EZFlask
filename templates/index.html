@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+.container {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.left, .right {
+  flex: 1;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</style>
+   <head>
+      <meta charset="utf-8">
+      <title>Twitter Wars</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div>
+            <h2> Twitter Wars </h2>
+               <h3> Project Description </h3>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+               consequat. 
+             </p><br><br>
+         <h3> Data Collection </h3>
+            <p>
+               Vestibulum massa magna, sagittis sit amet justo at, faucibus eleifend neque. Donec rhoncus tortor facilisis porttitor dignissim. 
+               Aenean vestibulum quam sit amet metus malesuada, id dignissim risus pulvinar. Sed vestibulum tincidunt ex, in posuere turpis consequat 
+               vel. Ut sapien neque, fermentum a nunc ut, pulvinar fringilla enim. Sed varius mi vitae ante semper aliquet. 
+             </p><br><br>
+         <h3> Sentiment Analysis </h3>
+             <p>
+               Curabitur vitae metus nibh. Integer vitae 
+               consequat erat, vel gravida elit. Praesent pellentesque erat ut mauris cursus, ut laoreet magna molestie. Curabitur leo sapien, ornare 
+               quis elementum vel, blandit id ipsum. Curabitur consequat venenatis nibh sit amet congue.  <br>
+
+               Vestibulum massa magna, sagittis sit amet justo at, faucibus eleifend neque. Donec rhoncus tortor facilisis porttitor dignissim. 
+               Aenean vestibulum quam sit amet metus malesuada, id dignissim risus pulvinar. Sed vestibulum tincidunt ex, in posuere turpis consequat 
+               vel. Ut sapien neque, fermentum a nunc ut, pulvinar fringilla enim. Sed varius mi vitae ante semper aliquet. 
+            </p><br><br>
+            <p>
+         <h3> Flask server </h3>
+               Quisque lectus nibh, blandit non elementum eu, condimentum sed ipsum. In efficitur quam ex, a rutrum mi tincidunt non. Cras finibus arcu
+                quis erat pulvinar, sed aliquet mauris elementum. Nullam vel justo eros. Nulla tempor libero quis dolor posuere, egestas convallis sapien 
+                eleifend. Donec convallis nibh sapien, nec ullamcorper lacus auctor nec. <br>
+               
+               
+            </p><br><br>
+            
+         <h3>  </h3>
+            <br><br>
+         </div>
+         
+         <div class="left">
+            
+         </div>
+         <div class="right">
+           <div>
+            <h3>Hashtag 1: </h3>
+             <canvas id ="plot_1" > </canvas>
+           </div>
+           <div>
+            <h3>Hashtag 2: </h3>
+             <canvas id="plot_2" ></canvas>
+           </div>
+         </div>
+       </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"> </script>
+   <script type="text/javascript"> 
+     
+   new Chart(document.getElementById("plot_1"), {
+      type: 'doughnut',
+      data: {
+         labels: ["Positive", "Nuetral", "Negative"],
+         datasets: [
+         {
+            label: "Tweets",
+            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+            data: ['{{data[0]}}','{{data[1]}}','{{data[2]}}']
+         }
+         ]
+      },
+      options: {
+         title: {
+         display: true,
+         text: '{{titles[0]}}'
+         }
+      }
+   });
+   new Chart(document.getElementById("plot_2"), {
+      type: 'doughnut',
+      data: {
+         labels:  ["Positive", "Nuetral", "Negative"],
+         datasets: [
+         {
+            label: "Tweets",
+            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+            data: ['{{data[3]}}','{{data[4]}}','{{data[5]}}']
+         }
+         ]
+      },
+      options: {
+         title: {
+         display: true,
+         text: '{{titles[1]}}'
+         }
+      }
+   });
+   </script>
+</body>
+</html>
