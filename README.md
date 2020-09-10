@@ -7,8 +7,7 @@
 3. python server.py
 4. Goto http://localhost:3000
 
-# GO DEEPER
-# ANALYZE YOUR OWN DATA SETS
+# GO DEEPER (ANALYZE YOUR OWN DATA SETS)
 1. Clear example data from '/data' folders 1 and 2
 2. Add twitter API info to config
 3. Add / Replace two hastags you want to compare to config
