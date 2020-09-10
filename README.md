@@ -1,5 +1,5 @@
-# @HONEST_TODD
-# TWITTER_WARS
+
+# TWITTER_WARS 
 
 # RUN LOCALLY
 1. Clone this repo: `git clone `
@@ -15,3 +15,4 @@
 5. Run server and compare the data visualizations! 
 
 # THATS IT! ENJOY 
+# @HONEST_TODD
