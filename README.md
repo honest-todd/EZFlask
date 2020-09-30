@@ -1,5 +1,7 @@
 
-# TWITTER_WARS 
+# EZFlask 
+
+An easy to use flask template for begnners
 
 # RUN LOCALLY
 1. Clone this repo: `git clone `
@@ -14,5 +16,5 @@
 4. Run script and gather data
 5. Run server and compare the data visualizations! 
 
-# THATS IT! ENJOY 
+# THATS IT! ENJOY :)
 # @HONEST_TODD
