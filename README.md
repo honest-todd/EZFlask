@@ -12,7 +12,7 @@ An easy to use flask template for begnners
 # GO DEEPER (ANALYZE YOUR OWN DATA SETS)
 1. Clear example data from '/data' folders 1 and 2
 2. Add twitter API info to config
-3. Add / Replace two hastags you want to compare to config
+3. Add / Replace two hashtags you want to compare to config
 4. Run script and gather data
 5. Run server and compare the data visualizations! 
 
