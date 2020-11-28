@@ -1,7 +1,8 @@
 
 # EZFlask 
 
-An easy to use flask template for begnners
+Easy to use flask data-scraping template to get you started
+
 
 # RUN LOCALLY
 1. Clone this repo: `git clone `
@@ -10,11 +11,10 @@ An easy to use flask template for begnners
 4. Goto http://localhost:3000
 
 # GO DEEPER (ANALYZE YOUR OWN DATA SETS)
-1. Clear example data from '/data' folders 1 and 2
-2. Add twitter API info to config
-3. Add / Replace two hashtags you want to compare to config
-4. Run script and gather data
-5. Run server and compare the data visualizations! 
+1. Add twitter API info to config
+2. Add / Replace two hashtags you want to compare to config
+3. Run script and gather data
+4. Run server and compare the data visualizations! 
 
 # THATS IT! ENJOY :)
 # @HONEST_TODD
