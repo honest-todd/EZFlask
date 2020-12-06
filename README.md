@@ -1,6 +1,8 @@
 
 # EZFlask 
 
+![](https://github.com/honest-todd/EZFlask/blob/master/static/EZthumbnail.mov)
+
 Easy to use flask data-scraping template to get you started
 
 
