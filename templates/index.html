@@ -3,7 +3,9 @@
 <style>
 .container {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Copperplate', sans-serif;
+  color:rgb(220,220,220);
+  font-style: italic;
 }
 .left, .right {
   flex: 1;
@@ -18,7 +20,6 @@
    display: flex;
    flex-direction: column;
    float: left;
-   background-color: lightblue;
 }
 #second {
    flex: 1;
@@ -26,11 +27,15 @@
 
    flex-direction: column;
    float: right;
-   background-color: lightyellow;
 }
 h1 { 
    text-align: center;
    font-weight: bold; 
+}
+
+body {
+   background: rgb(46,161,137);
+   background: radial-gradient(circle, rgba(46,161,137,1) 0%, rgba(57,25,61,1) 100%);
 }
 
 </style>
@@ -57,9 +62,8 @@ h1 {
 
       </div>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"> </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
    <script type="text/javascript"> 
-     
    new Chart(document.getElementById("plot_1"), {
       type: 'doughnut',
       data: {
@@ -94,10 +98,17 @@ h1 {
       options: {
          title: {
          display: true,
-         text: '{{titles[1]}}'
+         text: '{{titles[1]}}',
+         legend: {
+            labels: {
+               fontColor: "#DCDCDC",
+               fontStyle: 'italic'
+               }
+            }
          }
       }
    });
+   Chart.defaults.global.defaultFontColor = '#DCDCDC';
    </script>
 </body>
 </html>
