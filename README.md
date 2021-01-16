@@ -1,2 +1,2 @@
-![](https://github.com/honest-todd/EZFlask/blob/master/static/thumbnail.gif)
+![](https://github.com/honest-todd/EZFlask/blob/master/static/prev.gif)
 
